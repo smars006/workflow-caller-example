@@ -1,0 +1,13 @@
+name: Main workflow
+
+on:
+  push:
+    branches:
+       - main
+
+jobs:
+  call-reusable-workflow:
+    uses: smars006/workflow-reusable-example/.github/workflows/reusable-workflow.yml@main
+    with:
+      name: 'Github user'
+      run-tests: true
