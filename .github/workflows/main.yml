@@ -3,7 +3,7 @@ name: Main workflow
 on:
   push:
     branches:
-       - main
+      - main
 
 jobs:
   call-reusable-workflow:
